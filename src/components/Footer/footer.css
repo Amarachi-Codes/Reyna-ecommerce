@@ -1,0 +1,24 @@
+.footerWrapper{
+    display: flex;
+    align-items: center;
+    padding: 6% 10%;
+    background-color: #131313;
+    justify-content: space-between;
+}
+.footerWrapper .footerContent p{  
+    color: #b1e58c;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+
+.footerWrapper .footerContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerWrapper .footerContent a{
+    color: #b1e58c;
+    text-decoration: none; 
+    padding-bottom: 4px;
+}

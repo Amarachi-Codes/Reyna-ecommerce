@@ -1,0 +1,22 @@
+.heroWrapper{
+    display: flex;
+    gap: 6%;
+    align-items: center;
+    justify-content: center;
+    background-color: #b1e58c;
+    padding: 0 4%;
+}
+.heroWrapper div h1{
+    margin-bottom: 12px;
+}
+.heroWrapper div p{
+    margin-bottom: 12px;
+}
+.heroWrapper div button{
+    padding: 12px 6px;
+    color: #fff;
+    background-color: #131313;
+    border: 1px solid #131313;
+    border-radius: 10px;
+    width: 128px;
+}
