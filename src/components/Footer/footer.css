@@ -22,3 +22,10 @@
     text-decoration: none; 
     padding-bottom: 4px;
 }
+
+@media screen and (max-width:910px) {
+    .footerWrapper{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

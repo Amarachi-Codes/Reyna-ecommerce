@@ -1,0 +1,44 @@
+.newsletter{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 4% 10%;
+    background-color: #2f620d;
+    color: #fff;
+    margin-top: 24px;
+    line-height: 2rem;
+}
+.newsletter .termsWrapper .terms{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsletter .termsWrapper .legal{
+    padding-left: 20px;
+    color: red;
+}
+.sendmail input{
+    padding: 6px;
+    border-radius: 4px;
+    width: 24vw;
+    outline: none;
+    border: none;
+}
+
+.sendmail button{
+    padding: 6px 12px;
+    border-radius: 4px; 
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background-color: #b1e58c;;
+}
+
+@media screen and (max-width:910px) {
+    .newsletter{
+    flex-wrap: wrap;
+    }
+
+
+}

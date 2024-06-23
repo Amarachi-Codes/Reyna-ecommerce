@@ -1,6 +1,8 @@
 
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { IoSearchSharp } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
     return (
@@ -11,8 +13,13 @@ const Navbar = () => {
                         Reyna
                     </div>
                 </NavLink>
+                <div className="navCenter">
                 <div className="inputWrapper">
+                    < IoSearchSharp/>
                     <input type="text" placeholder="Search" />
+                    
+                </div>
+                <button>Search</button>
                 </div>
                 <div className="navRight">
                     <ul>
@@ -25,7 +32,7 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-
+                <GiHamburgerMenu className="hamburger" fill="#fff"/>
             </nav>
         </>
     )

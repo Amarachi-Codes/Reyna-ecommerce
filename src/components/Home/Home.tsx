@@ -6,6 +6,7 @@ import { MantineProvider } from '@mantine/core';
 import Navbar from "../NavBar/Navbar";
 import Hero from "../Hero/Hero";
 import Footer from "../Footer/Footer";
+import Newsletter from "../Newsletter/Newsletter";
 
 interface Items {
     id: number
@@ -46,9 +47,9 @@ const Home = () => {
 
 
 
-    const handleDelete = (id: number) => {
-        alert("user with: " + id + " deleted succesfully");
-    }
+    // const handleDelete = (id: number) => {
+    //     alert("user with: " + id + " deleted succesfully");
+    // }
 
     return (
 
@@ -83,16 +84,17 @@ const Home = () => {
 
                             </Group>
 
-                            <Text size="sm" c="dimmed">
+                            {/* <Text size="sm" c="dimmed">
                                 {item.description}
-                            </Text>
+                            </Text> */}
 
 
-                            <div><button className='delete' onClick={() => { handleDelete(item.id) }}>Delete</button></div>
+                            {/* <div><button className='delete' onClick={() => { handleDelete(item.id) }}>Delete</button></div> */}
                         </Card>
 
                     ))}
                 </div>
+                <Newsletter/>
                 <Footer/>
             </MantineProvider>
         </>

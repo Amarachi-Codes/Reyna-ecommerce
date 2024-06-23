@@ -60,7 +60,7 @@
  }
 
  .card{
-  border: 1px solid gainsboro;
+  border: 1px solid #b1e58c;
   border-radius: 10px;
   padding: 20px;
   width: 20vw;
@@ -74,3 +74,9 @@
   text-align: center;
   margin-top: 40px;
  }
+
+ @media screen and (max-width:910px) {
+  .card{
+    width: 100vw;
+  }
+  }

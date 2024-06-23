@@ -20,3 +20,13 @@
     border-radius: 10px;
     width: 128px;
 }
+
+@media screen and (max-width:910px) {
+    .heroWrapper{
+        flex-wrap: wrap;
+        padding-top:20%;
+    }
+    .heroWrapper img{
+        width: 100vw;
+    }
+    }

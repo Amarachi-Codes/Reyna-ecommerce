@@ -5,6 +5,8 @@
   /* background-color: #2f620d; */
   justify-content: space-between;
   padding: 28px;
+  position: sticky;
+  top: 0;
 }
 .nav .logoWrapper{
   text-decoration: none;
@@ -13,17 +15,34 @@
   color: #fff;
   font-size: 24px;
 }
-.nav .inputWrapper{
-  width: 30vw;
+
+.nav .navCenter{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav .navCenter .inputWrapper{
   border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  
   
 }
-.nav .inputWrapper input{
+.nav .navCenter .inputWrapper input{
   width: 30vw;
-  padding: 8px;
+  padding: 8px 4px;
   border-radius: 10px;
   outline: none;
   border: #fff;
+}
+.nav .navCenter button{
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: #b1e58c;
+  background-color: #b1e58c; 
+  margin-left: 8px;
 }
 .nav .navRight ul{
   display: flex;
@@ -34,3 +53,22 @@
   text-decoration: none;
   color: #fff;
 }
+
+.nav .navRight ul a:hover{
+  color: #b1e58c;
+}
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width:910px) {
+  .nav .navCenter{
+    display: none;
+  }
+  .nav .navRight ul{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  }
