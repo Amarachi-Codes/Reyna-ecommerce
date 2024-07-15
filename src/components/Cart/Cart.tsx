@@ -48,7 +48,7 @@ const Cart = () => {
     <>
     <Navbar/>
     <div className="cartTitle">
-       <NavLink to={"/"}> <MdOutlineKeyboardArrowLeft color="red"/></NavLink>
+       <NavLink to={"/"}> <MdOutlineKeyboardArrowLeft className="goBack" color="red"/></NavLink>
     <h3>Cart</h3>
     </div>
       {/* <MantineProvider>
