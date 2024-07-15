@@ -1,49 +1,49 @@
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Cart.css";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { MantineProvider } from "@mantine/core";
-import { Card, Image, Button} from '@mantine/core';
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import { MantineProvider } from "@mantine/core";
+// import { Card, Image, Button} from '@mantine/core';
 import Navbar from "../NavBar/Navbar";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 
-interface Items {
-    id: number
-    title: string
-    price: string
-    category: string
-    description: string
-    image: string
-}
+// interface Items {
+//     id: number
+//     title: string
+//     price: string
+//     category: string
+//     description: string
+//     image: string
+// }
 
 const Cart = () => {
-    const [Items, setItems] = useState<Items[]>([])
+    // const [Items, setItems] = useState<Items[]>([])
     
 
 
-     const {id} = useParams<{id:string}>()
-     const {image} = useParams<{image:string}>()
-    const itemChanger=(id:number)=>{
+    //  const {id} = useParams<{id:string}>()
+    //  const {image} = useParams<{image:string}>()
+    // const itemChanger=(id:number)=>{
         
         
-        useEffect(() => {
-            fetchData();
-        }, [])
-        const fetchData= async()=>{
-            try {
-                const response = await axios.get(
-                    'https://fakestoreapi.com/products/carts?userId=1'
-                );
-                const responseData: Items[] = response.data;
-            setItems(responseData)
-            console.log(response.data);
-            } catch (error) {
-                console.log(`Error fetching Data: ${error}`);
-            }
-        }
+    //     useEffect(() => {
+    //         fetchData();
+    //     }, [])
+    //     const fetchData= async()=>{
+    //         try {
+    //             const response = await axios.get(
+    //                 'https://fakestoreapi.com/products/carts?userId=1'
+    //             );
+    //             const responseData: Items[] = response.data;
+    //         setItems(responseData)
+    //         console.log(response.data);
+    //         } catch (error) {
+    //             console.log(`Error fetching Data: ${error}`);
+    //         }
+    //     }
         
-    }
+    // }
   return (
     <>
     <Navbar/>
@@ -51,7 +51,7 @@ const Cart = () => {
        <NavLink to={"/"}> <MdOutlineKeyboardArrowLeft color="red"/></NavLink>
     <h3>Cart</h3>
     </div>
-      <MantineProvider>
+      {/* <MantineProvider>
         <div>
       {Items.map((item) => (
 
@@ -76,9 +76,11 @@ const Cart = () => {
     ))
     }
     </div>
-      </MantineProvider>
+      </MantineProvider> */}
+      
     </>
   )
-}
+  
+ }
 
 export default Cart
