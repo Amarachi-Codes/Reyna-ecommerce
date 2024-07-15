@@ -3,8 +3,11 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { IoSearchSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false);
     return (
         <>
             <nav className="nav">
@@ -32,7 +35,19 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                <GiHamburgerMenu className="hamburger" fill="#fff"/>
+                {showMenu?<IoCloseSharp className="displaynav" fill="#fff" onClick={()=>{setShowMenu(!showMenu)}}/> : <GiHamburgerMenu className="displaynav" fill="#fff" onClick={()=>{setShowMenu(!showMenu)}}/>  }
+                {showMenu &&(
+                 <div className="hamburger">
+                 <ul>
+                 <li><NavLink to={"/"}>Home</NavLink></li>
+                     <li><NavLink to={"/cart/:id"}>Cart</NavLink></li>
+                     <li><NavLink to={"/page/signin"}>SignIn</NavLink></li>
+                     <li><NavLink to={""}>SignUp</NavLink></li>
+                     <li><NavLink to={""}>LogOut</NavLink></li>
+                 </ul>
+             </div>   
+                )}
+                
             </nav>
         </>
     )

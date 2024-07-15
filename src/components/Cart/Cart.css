@@ -1,0 +1,7 @@
+.cartTitle{
+    display: flex;
+    align-items: center;
+    gap: 45%;
+    margin: 16px;
+    color: red;
+}

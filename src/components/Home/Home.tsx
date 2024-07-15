@@ -7,6 +7,8 @@ import Navbar from "../NavBar/Navbar";
 import Hero from "../Hero/Hero";
 import Footer from "../Footer/Footer";
 import Newsletter from "../Newsletter/Newsletter";
+import { useNavigate } from "react-router-dom";
+
 
 interface Items {
     id: number
@@ -25,6 +27,7 @@ const Home = () => {
         fetchData();
     }, [])
 
+    const navigate = useNavigate()
 
 
 
@@ -44,7 +47,9 @@ const Home = () => {
 
         }
     }
-
+        const addToCart = (id:number)=>{
+                navigate(`/cart/${id}`)
+        }
 
 
     // const handleDelete = (id: number) => {
@@ -71,6 +76,7 @@ const Home = () => {
                                     height={160}
                                     alt="Norway"
                                     className='apiimage'
+                                    
                                 />
                             </Card.Section>
                             <div>
@@ -83,7 +89,9 @@ const Home = () => {
                                 <Badge color="pink">${item.price}</Badge>
 
                             </Group>
-
+                            <Button className="mycart" fullWidth mt="md" radius="md" onClick={()=>addToCart(item.id)}>
+                                    Cart
+                                </Button>
                             {/* <Text size="sm" c="dimmed">
                                 {item.description}
                             </Text> */}
