@@ -35,7 +35,7 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                {showMenu?<IoCloseSharp className="displaynav" fill="#fff" onClick={()=>{setShowMenu(!showMenu)}}/> : <GiHamburgerMenu className="displaynav" fill="#fff" onClick={()=>{setShowMenu(!showMenu)}}/>  }
+                {showMenu?<IoCloseSharp className="displaynav" fill="#fff" onClick={()=>{setShowMenu(!showMenu)}}/> : <GiHamburgerMenu className="displaynav" fill="#000" onClick={()=>{setShowMenu(!showMenu)}}/>  }
                 {showMenu &&(
                  <div className="hamburger">
                  <ul>

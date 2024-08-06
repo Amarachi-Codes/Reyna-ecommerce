@@ -1,8 +1,8 @@
 .nav{
   display: flex;
   align-items: center;
-  background-color: #131313;
-  /* background-color: #2f620d; */
+  /* background-color: #131313; */
+  background-color: #fff;
   justify-content: space-between;
   padding: 28px;
   position: sticky;
@@ -12,7 +12,7 @@
   text-decoration: none;
 }
 .nav .logoWrapper .logo{
-  color: #fff;
+  color: #000;
   font-size: 24px;
 }
 
@@ -24,6 +24,7 @@
 .nav .navCenter .inputWrapper{
   border-radius: 10px;
   background-color: #fff;
+  border: 1px solid #000;
   display: flex;
   align-items: center;
   padding-left: 4px;
@@ -35,13 +36,15 @@
   padding: 8px 4px;
   border-radius: 10px;
   outline: none;
-  border: #fff;
+  border:none;
 }
 .nav .navCenter button{
   padding: 8px 18px;
   border-radius: 10px;
-  border: #b1e58c;
-  background-color: #b1e58c; 
+  /* border: #b1e58c; */
+  /* background-color: #b1e58c;  */
+  border: #54fa61;
+  background-color: #54fa61;
   margin-left: 8px;
 }
 .nav .navRight ul{
@@ -51,7 +54,7 @@
 }
 .nav .navRight ul a{
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .nav .navRight ul a:hover{

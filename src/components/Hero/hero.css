@@ -3,8 +3,10 @@
     gap: 6%;
     align-items: center;
     justify-content: center;
-    background-color: #b1e58c;
-    padding: 0 4%;
+    /* background-color: #b1e58c; */
+    background-color: #540474;
+    color: #fff;
+    padding: 4% 4%;
 }
 .heroWrapper div h1{
     margin-bottom: 12px;
@@ -14,11 +16,22 @@
 }
 .heroWrapper div button{
     padding: 12px 6px;
-    color: #fff;
-    background-color: #131313;
+    color: #000;
+    /* background-color: #131313; */
+    background-color: #54fa61;
     border: 1px solid #131313;
     border-radius: 10px;
     width: 128px;
+}
+.heroWrapper .imgWrapper{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroWrapper .imgWrapper img{
+    width: 80%;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:910px) {
@@ -26,7 +39,8 @@
         flex-wrap: wrap;
         padding-top:20%;
     }
-    .heroWrapper img{
-        width: 100vw;
+    .heroWrapper .imgWrapper img{
+        width: 90vw;
+        padding: 20%;
     }
     }

@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 .footerWrapper .footerContent p{  
-    color: #b1e58c;
+    color: #54fa61;
     text-decoration: underline;
     font-size: 20px;
     padding-bottom: 6px;
@@ -18,7 +18,7 @@
 }
 
 .footerWrapper .footerContent a{
-    color: #b1e58c;
+    color: #54fa61;
     text-decoration: none; 
     padding-bottom: 4px;
 }
