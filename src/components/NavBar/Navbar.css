@@ -12,8 +12,11 @@
   text-decoration: none;
 }
 .nav .logoWrapper .logo{
-  color: #000;
+  color: #540474;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .nav .navCenter{
@@ -58,7 +61,7 @@
 }
 
 .nav .navRight ul a:hover{
-  color: #b1e58c;
+  color: #540474;
 }
 .displaynav {
   display: none;

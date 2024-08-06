@@ -5,6 +5,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
+import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
             <nav className="nav">
                 <NavLink to={""} className="logoWrapper">
                     <div className="logo">
-                        Reyna
+                        <TiShoppingCart fill="#540474"/>Reyna
                     </div>
                 </NavLink>
                 <div className="navCenter">
@@ -35,7 +36,7 @@ const Navbar = () => {
                     </ul>
 
                 </div>
-                {showMenu?<IoCloseSharp className="displaynav" fill="#fff" onClick={()=>{setShowMenu(!showMenu)}}/> : <GiHamburgerMenu className="displaynav" fill="#000" onClick={()=>{setShowMenu(!showMenu)}}/>  }
+                {showMenu?<IoCloseSharp className="displaynav" fill="#540474" onClick={()=>{setShowMenu(!showMenu)}}/> : <GiHamburgerMenu className="displaynav" fill="#540474" onClick={()=>{setShowMenu(!showMenu)}}/>  }
                 {showMenu &&(
                  <div className="hamburger">
                  <ul>
