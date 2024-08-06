@@ -1,5 +1,4 @@
 import './hero.css';
-// import creditcard from "../../assets/creditcard.png";
 import osm from "./../../assets/osm.jpg";
 const Hero = () => {
     return (

@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 .heroWrapper .imgWrapper img{
     width: 80%;
@@ -41,6 +42,9 @@
     }
     .heroWrapper .imgWrapper img{
         width: 90vw;
-        padding: 20%;
+        
     }
+    .heroWrapper .imgWrapper{
+    margin: 4% 0;
+}
     }
